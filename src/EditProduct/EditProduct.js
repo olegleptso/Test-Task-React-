@@ -13,11 +13,11 @@ export default class EditProduct extends Component {
 
 	render() {
 		return (
-			<div className={styles.Backdrop}>
+			<div className={styles.Backdrop}>    
 				<div className={styles.Modal}>
-					<h3>Edit Product</h3>
+					<h3>Edit Product</h3> 
 					<h4>Change details</h4>
-					<input
+					<input										
 						placeholder="Name"
 						value={this.state.name}
 						onChange={event => {

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Comment.module.css";
 
-export default function Comment(props) {
+export default function Comment(props) {  
     return (
         <div className={styles.Comment}>
             <p>{props.content}</p>

@@ -25,7 +25,7 @@ export default class ProductPage extends Component {
         this.setState({id:this.props.match.params.productId})
 	}
 
-    getProduct = () => {
+    getProduct = () => {   									//getting product by id from firebase
 		axios
 			.get(
 				"https://react-test-task-6dee9-default-rtdb.europe-west1.firebasedatabase.app/products/" + this.props.match.params.productId + ".json"
@@ -46,12 +46,12 @@ export default class ProductPage extends Component {
 			});
 	}
 
-    toggleEdit = () => {
+    toggleEdit = () => {									//toggle for modal window
         this.setState({editing: !this.state.editing});
         this.getProduct();
     };
 
-    changeProduct = (id, changedProduct) => {
+    changeProduct = (id, changedProduct) => {				//changing product properties
             axios
                 .put("https://react-test-task-6dee9-default-rtdb.europe-west1.firebasedatabase.app/products/" + this.state.id + ".json", 
 				{
@@ -72,7 +72,7 @@ export default class ProductPage extends Component {
         
     };
 
-    leaveComment = () => {
+    leaveComment = () => {											//creating a comment
 		let newComments = [];
 		if (this.state.comments) {
 			newComments = [...this.state.comments];
@@ -98,7 +98,7 @@ export default class ProductPage extends Component {
 			});
 	};
 
-    deleteComment(commentId) {
+    deleteComment(commentId) {									//deleting comment
 		const newComments = this.state.comments.filter(comment => comment.id !== commentId);
 
 		axios
