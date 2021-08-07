@@ -1,0 +1,45 @@
+.ProductPage {
+	height: 100%;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: space-around;
+}
+
+.ProductPage button {
+    background-color: rgb(190, 224, 233);
+    width: 190px;
+	height: 50px;
+	border: 1px solid gray;
+	margin: 25px;
+    border-radius:15px;
+}
+
+.ProductPage button:hover {
+    background-color: rgb(177, 209, 218);
+    cursor: pointer;
+}
+
+.ProductPage img {
+    width: 400px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.ProductInfo {
+	text-align: center;
+	padding: 25px;
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+}
+
+.CommentArea {
+    font-size: 12px;
+	width: 100%;
+	height: 100px;
+    border-radius: 5px;
+}
+
+.Comments {
+    padding:25px;
+}

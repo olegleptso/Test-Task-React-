@@ -1,0 +1,33 @@
+.Modal {
+	width: 400px;
+	background-color: white;
+	position: absolute;
+	box-sizing: content-box;
+	padding: 0 40px;
+	left: 35%;
+	top:2%
+}
+
+.Backdrop {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.Modal input {
+	width: 300px;
+	border-radius: 15px;
+	margin: 15px 0;
+	height: 33px;
+	font-size: 16px;
+}
+
+.Modal button {
+	margin: 20px;
+	background-color: rgb(190, 224, 233);
+	cursor: pointer;
+}
+

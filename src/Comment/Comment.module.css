@@ -1,0 +1,31 @@
+.Comment {
+	margin: 10px auto;
+	width: 412px;
+	background-color: white;
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 20px;
+	box-sizing: border-box;
+}
+
+.Comment p {
+	font-size: 14px;
+	text-align: left;
+}
+
+.Date {
+	display: inline-block;
+	height: 20px;
+	margin: auto;
+	font-weight: 200;
+}
+
+.Comment button {
+	display: inline-block;
+}
+
+.DateDelete {
+	display: flex;
+	justify-content: space-around;
+	padding: 0px;
+}
